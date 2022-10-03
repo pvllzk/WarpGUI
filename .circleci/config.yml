@@ -3,7 +3,7 @@ jobs:
   #Ubuntu
   test_ubuntu:
     machine:
-      image: rust:latest
+      image: cimg/rust:1.64.0
     steps:
       - checkout
       # - run: 'curl https://sh.rustup.rs -sSf | sh -s -- -y'
@@ -17,7 +17,7 @@ jobs:
 
   build_ubuntu:
     machine:
-      image: rust:latest
+      image: cimg/rust:1.64.0
     steps:
       - checkout
       # - run: 'curl https://sh.rustup.rs -sSf | sh -s -- -y'
