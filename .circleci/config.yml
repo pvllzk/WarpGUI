@@ -32,7 +32,7 @@ jobs:
           command: cargo build --release
       - run:
           name: Compress Artifacts (Bin)
-          command: zip -r bin.zip target/release/warp_gui
+          command: zip -r bin.zip target/release/warpgui
       - store_artifacts:
           path: bin.zip
           destination: /ubuntu/bin.zip
