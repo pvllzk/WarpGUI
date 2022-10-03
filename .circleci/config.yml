@@ -2,8 +2,8 @@ version: 2.1
 jobs:
   #Ubuntu
   test_ubuntu:
-    machine:
-      image: cimg/rust:1.64.0
+    docker:
+      - image: cimg/rust:1.64.0
     steps:
       - checkout
       # - run: 'curl https://sh.rustup.rs -sSf | sh -s -- -y'
@@ -16,8 +16,8 @@ jobs:
           command: cargo test
 
   build_ubuntu:
-    machine:
-      image: cimg/rust:1.64.0
+    docker:
+      - image: cimg/rust:1.64.0
     steps:
       - checkout
       # - run: 'curl https://sh.rustup.rs -sSf | sh -s -- -y'
