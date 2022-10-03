@@ -8,6 +8,7 @@ jobs:
       - checkout
       # - run: 'curl https://sh.rustup.rs -sSf | sh -s -- -y'
       # - run: source ~/.cargo/env
+      - run: sudo apt update
       - run: sudo apt install -y libgtk-3-dev
       - run: sudo apt install -y libwebkit2gtk-4.0-dev
       - run: sudo apt install -y protobuf-compiler
@@ -22,6 +23,7 @@ jobs:
       - checkout
       # - run: 'curl https://sh.rustup.rs -sSf | sh -s -- -y'
       # - run: source ~/.cargo/env
+      - run: sudo apt update
       - run: sudo apt install -y libgtk-3-dev
       - run: sudo apt install -y libwebkit2gtk-4.0-dev
       - run: sudo apt install -y protobuf-compiler
